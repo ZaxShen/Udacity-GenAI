@@ -206,5 +206,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Data
+**/data/
 
+# Mac Trash
 .DS_Store
