@@ -1965,6 +1965,27 @@ wheels = [
 ]
 
 [[package]]
+name = "peft"
+version = "0.18.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "huggingface-hub" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "psutil" },
+    { name = "pyyaml" },
+    { name = "safetensors" },
+    { name = "torch" },
+    { name = "tqdm" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d8/48/147b3ea999560b40a34fd78724c7777aa9d18409c2250bdcaf9c4f2db7fc/peft-0.18.1.tar.gz", hash = "sha256:2dd0d6bfce936d1850e48aaddbd250941c5c02fc8ef3237cd8fd5aac35e0bae2", size = 635030, upload-time = "2026-01-09T13:08:01.136Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b3/14/b4e3f574acf349ae6f61f9c000a77f97a3b315b4bb6ad03791e79ae4a568/peft-0.18.1-py3-none-any.whl", hash = "sha256:0bf06847a3551e3019fc58c440cffc9a6b73e6e2962c95b52e224f77bbdb50f1", size = 556960, upload-time = "2026-01-09T13:07:55.865Z" },
+]
+
+[[package]]
 name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3093,6 +3114,20 @@ wheels = [
 ]
 
 [[package]]
+name = "trl"
+version = "0.26.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "accelerate" },
+    { name = "datasets" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4d/21/fb9aead218f04b1d62a16ba97fcc4c2e5b629991497b3ec02018be7ca922/trl-0.26.2.tar.gz", hash = "sha256:89c5a81847e74d05f53686bc98ae966d0314ff0644d821a8abb05e0ad94adc47", size = 436370, upload-time = "2025-12-18T15:49:41.147Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4c/1f/d5e73557b9d7d89343d9569b22b685385e82b6ce0e43de6a934fe6843d4b/trl-0.26.2-py3-none-any.whl", hash = "sha256:532a6d221201b5fef4b961fbaae4c67ca5d9f35c33d35c73ac4ea2cbb35e8d0d", size = 518928, upload-time = "2025-12-18T15:49:39.983Z" },
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3135,9 +3170,11 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "peft" },
     { name = "rouge-score" },
     { name = "sentence-transformers" },
     { name = "torchvision" },
+    { name = "trl" },
 ]
 
 [package.metadata]
@@ -3150,9 +3187,11 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "numpy", specifier = ">=2.4.0" },
     { name = "pandas", specifier = ">=2.3.3" },
+    { name = "peft", specifier = ">=0.18.1" },
     { name = "rouge-score", specifier = ">=0.1.2" },
     { name = "sentence-transformers", specifier = ">=5.2.0" },
     { name = "torchvision", specifier = ">=0.24.1" },
+    { name = "trl", specifier = ">=0.26.2" },
 ]
 
 [[package]]
