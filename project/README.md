@@ -53,7 +53,6 @@ uv pip install -r requirements.txt  --no-deps
 - Open `project/starter/gen_ai_fundamentals_project_starter.ipynb` in Jupyter and select the `.venv` kernel.
 - Execute cells in order. The notebook installs any remaining Python dependencies needed for training and evaluation.
 
-
 ## Built With
 
 - PyTorch, Transformers, Unsloth, vLLM, TRL
