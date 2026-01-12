@@ -3,6 +3,7 @@
 This project guides you through teaching an instruction-tuned LLM to reason step‑by‑step using GRPO (Group Relative Policy Optimization). The model learns to break a word into letters and count a specific letter.
 
 Key notebooks and files:
+
 - `project/starter/gen_ai_fundamentals_project_starter.ipynb`
 - `project/solution/gen_ai_fundamentals_project_solution.ipynb`
 - `requirements.txt`
@@ -18,7 +19,8 @@ Key notebooks and files:
 - CUDA: 12.9.1
 
 Install driver + CUDA toolkit only if you are sure drivers/CUDA are not already installed on your system (if you can run nvidia-smi, you have them installed definitely).
-```
+
+```sh
 sudo apt update && sudo apt install gcc make -y
 wget https://developer.download.nvidia.com/compute/cuda/12.9.1/local_installers/cuda_12.9.1_575.57.08_linux.run
 sudo sh cuda_12.9.1_575.57.08_linux.run --silent --toolkit --driver --no-drm
@@ -27,15 +29,18 @@ sudo sh cuda_12.9.1_575.57.08_linux.run --silent --toolkit --driver --no-drm
 ## Other Dependencies
 
 Install uv and Python headers:
-```
+
+```sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+
 Restart your terminal to ensure `uv` is available.
 
 ## Environment Setup
 
 From the repository root (or the `project/` directory):
-```
+
+```sh
 uv python pin 3.12.3
 uv init
 uv sync
